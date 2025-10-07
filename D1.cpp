@@ -2,11 +2,9 @@
 #include <iostream>
 using namespace std;
 
-D1::D1(int x1, int x2, int x3) : B1(x1), B2(x2) {
-    d1_value = x3;
-    cout << "Constructor D1, values: b1_value = " << x1
-        << ", b2_value = " << x2
-        << ", d1_value = " << d1_value << endl;
+D1::D1(char c, int n, float f, string s, double d) : B1(c, n), B2(f, s) {
+    d1_double = d;
+    cout << "Constructor D1 -> double: " << d1_double << endl;
 }
 
 D1::~D1() {

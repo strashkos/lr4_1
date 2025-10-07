@@ -4,8 +4,10 @@
 
 class D3 : private D1, public D2 {
 protected:
-    int d3_value;
+    int d3_number;
+    double d3_double;
 public:
-    D3(int x1, int x2, int x3, int x4, int x5);
+    D3(char c1, int n1, float f1, string s1, double d1,
+        char c2, int n2, float f2, string s2, string txt, int num, double dbl);
     ~D3();
 };

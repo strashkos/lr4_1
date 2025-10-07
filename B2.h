@@ -1,11 +1,13 @@
 #pragma once
 #include <iostream>
+#include <string>
 using namespace std;
 
 class B2 {
 protected:
-    int b2_value;
+    float b2_float;
+    string b2_str;
 public:
-    B2(int x);
+    B2(float f, string s);
     ~B2();
 };

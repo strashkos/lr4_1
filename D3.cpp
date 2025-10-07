@@ -2,15 +2,12 @@
 #include <iostream>
 using namespace std;
 
-D3::D3(int x1, int x2, int x3, int x4, int x5)
-    : D1(x1, x2, x3), D2(x1, x2, x4) {
-    d3_value = x5;
-    cout << "Constructor D3, values: "
-        << "b1_value = " << x1
-        << ", b2_value = " << x2
-        << ", d1_value = " << x3
-        << ", d2_value = " << x4
-        << ", d3_value = " << d3_value << endl;
+D3::D3(char c1, int n1, float f1, string s1, double d1,
+    char c2, int n2, float f2, string s2, string txt, int num, double dbl)
+    : D1(c1, n1, f1, s1, d1), D2(c2, n2, f2, s2, txt) {
+    d3_number = num;
+    d3_double = dbl;
+    cout << "Constructor D3 -> int: " << d3_number << ", double: " << d3_double << endl;
 }
 
 D3::~D3() {

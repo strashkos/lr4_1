@@ -4,8 +4,8 @@
 
 class D2 : public B1, private B2 {
 protected:
-    int d2_value;
+    string d2_text;
 public:
-    D2(int x1, int x2, int x3);
+    D2(char c, int n, float f, string s, string txt);
     ~D2();
 };
